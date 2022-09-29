@@ -7,6 +7,9 @@
 
 import Foundation
 
-class Model { }
-
-//https://github.com/HamzaGhazouani/HGCircularSlider/releases/tag/2.2.0
+struct CredModel {
+    let title: String?
+    let subTitle: String?
+    let buttonTitle: String?
+    var stateType: CredState = .expanded
+}

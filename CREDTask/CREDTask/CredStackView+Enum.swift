@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CredStateEnum {
+enum CredState {
     case expanded
     case collapsed
 }

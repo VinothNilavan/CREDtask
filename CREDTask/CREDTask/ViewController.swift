@@ -18,8 +18,6 @@ class ViewController: UIViewController {
         closeBtn.roundCorners()
         infoBtn.backgroundColor = .darkGray.withAlphaComponent(0.5)
         closeBtn.backgroundColor = .darkGray.withAlphaComponent(0.5)
+        self.view.addSubview(CredStackView())
     }
-    
-    func getView() { }
 }
-
