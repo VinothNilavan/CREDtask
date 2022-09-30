@@ -2,7 +2,7 @@
 //  View+extension.swift
 //  CREDTask
 //
-//  Created by Vinoth on 28/09/22.
+//  Created by Vinoth on 29/09/22.
 //
 
 import Foundation
@@ -66,5 +66,27 @@ extension UIView {
         if let height = height {
             subview.heightAnchor.constraint(equalToConstant: height).isActive = true
         }
+    }
+}
+
+public extension UIStackView {
+    convenience init(axis: NSLayoutConstraint.Axis, spacing: CGFloat? = nil, withAutoLayout: Bool = false) {
+        self.init()
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.axis = axis
+        if let spacing = spacing {
+            self.spacing = spacing
+        }
+    }
+
+    func removeArrangedSubviews() {
+        for oldSubview in arrangedSubviews {
+            removeArrangedSubview(oldSubview)
+            oldSubview.removeFromSuperview()
+        }
+    }
+
+    func addArrangedSubviews(_ subviews: [UIView]) {
+        subviews.forEach(addArrangedSubview)
     }
 }

@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1897E75B28E5648D0082D98D /* CircularSliderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897E75628E5648D0082D98D /* CircularSliderHelper.swift */; };
-		1897E75C28E5648D0082D98D /* CircularSlider+Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897E75728E5648D0082D98D /* CircularSlider+Draw.swift */; };
-		1897E75D28E5648D0082D98D /* MidPointCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897E75828E5648D0082D98D /* MidPointCircularSlider.swift */; };
-		1897E75E28E5648D0082D98D /* RangeCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897E75928E5648D0082D98D /* RangeCircularSlider.swift */; };
-		1897E75F28E5648D0082D98D /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897E75A28E5648D0082D98D /* CircularSlider.swift */; };
 		18AF24D128E3FC0600B8C9E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF24D028E3FC0600B8C9E9 /* AppDelegate.swift */; };
 		18AF24D328E3FC0600B8C9E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF24D228E3FC0600B8C9E9 /* SceneDelegate.swift */; };
 		18AF24D528E3FC0600B8C9E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF24D428E3FC0600B8C9E9 /* ViewController.swift */; };
@@ -26,11 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1897E75628E5648D0082D98D /* CircularSliderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularSliderHelper.swift; path = CREDTask/ThirdParty/CircularSliderHelper.swift; sourceTree = SOURCE_ROOT; };
-		1897E75728E5648D0082D98D /* CircularSlider+Draw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CircularSlider+Draw.swift"; path = "CREDTask/ThirdParty/CircularSlider+Draw.swift"; sourceTree = SOURCE_ROOT; };
-		1897E75828E5648D0082D98D /* MidPointCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MidPointCircularSlider.swift; path = CREDTask/ThirdParty/MidPointCircularSlider.swift; sourceTree = SOURCE_ROOT; };
-		1897E75928E5648D0082D98D /* RangeCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RangeCircularSlider.swift; path = CREDTask/ThirdParty/RangeCircularSlider.swift; sourceTree = SOURCE_ROOT; };
-		1897E75A28E5648D0082D98D /* CircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularSlider.swift; path = CREDTask/ThirdParty/CircularSlider.swift; sourceTree = SOURCE_ROOT; };
 		18AF24CD28E3FC0600B8C9E9 /* CREDTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CREDTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AF24D028E3FC0600B8C9E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18AF24D228E3FC0600B8C9E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,18 +47,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1897E75528E564800082D98D /* ThirdParties */ = {
-			isa = PBXGroup;
-			children = (
-				1897E75A28E5648D0082D98D /* CircularSlider.swift */,
-				1897E75728E5648D0082D98D /* CircularSlider+Draw.swift */,
-				1897E75628E5648D0082D98D /* CircularSliderHelper.swift */,
-				1897E75828E5648D0082D98D /* MidPointCircularSlider.swift */,
-				1897E75928E5648D0082D98D /* RangeCircularSlider.swift */,
-			);
-			path = ThirdParties;
-			sourceTree = "<group>";
-		};
 		18AF24C428E3FC0600B8C9E9 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +74,6 @@
 				18AF24E828E4B3FD00B8C9E9 /* CredStackView.swift */,
 				18AF24EC28E5484900B8C9E9 /* CredStackView+Enum.swift */,
 				18AF24EA28E4B4EC00B8C9E9 /* View+extension.swift */,
-				1897E75528E564800082D98D /* ThirdParties */,
 				18AF24D628E3FC0600B8C9E9 /* Main.storyboard */,
 				18AF24D928E3FC0700B8C9E9 /* Assets.xcassets */,
 				18AF24DB28E3FC0700B8C9E9 /* LaunchScreen.storyboard */,
@@ -179,16 +156,11 @@
 				18AF24E928E4B3FD00B8C9E9 /* CredStackView.swift in Sources */,
 				18AF24E728E4B3C800B8C9E9 /* Model.swift in Sources */,
 				18AF24ED28E5484900B8C9E9 /* CredStackView+Enum.swift in Sources */,
-				1897E75F28E5648D0082D98D /* CircularSlider.swift in Sources */,
-				1897E75D28E5648D0082D98D /* MidPointCircularSlider.swift in Sources */,
 				18AF24EB28E4B4EC00B8C9E9 /* View+extension.swift in Sources */,
-				1897E75E28E5648D0082D98D /* RangeCircularSlider.swift in Sources */,
 				18AF24D528E3FC0600B8C9E9 /* ViewController.swift in Sources */,
 				18AF24D128E3FC0600B8C9E9 /* AppDelegate.swift in Sources */,
 				18AF24E528E4B3B400B8C9E9 /* ViewModel.swift in Sources */,
-				1897E75C28E5648D0082D98D /* CircularSlider+Draw.swift in Sources */,
 				18AF24D328E3FC0600B8C9E9 /* SceneDelegate.swift in Sources */,
-				1897E75B28E5648D0082D98D /* CircularSliderHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
