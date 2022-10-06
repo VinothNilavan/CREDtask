@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,42 +16,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyi-uL-90Q">
-                                <rect key="frame" x="16" y="47" width="36" height="36"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOa-77-nDZ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyi-uL-90Q">
+                                        <rect key="frame" x="22" y="22" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="9m1-mJ-cD4"/>
+                                            <constraint firstAttribute="height" constant="36" id="OT8-W0-1bC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="X">
+                                            <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIj-3S-eTg">
+                                        <rect key="frame" x="332" y="22" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="cIb-17-4df"/>
+                                            <constraint firstAttribute="height" constant="36" id="p19-HA-0TH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="?">
+                                            <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="9m1-mJ-cD4"/>
-                                    <constraint firstAttribute="height" constant="36" id="OT8-W0-1bC"/>
+                                    <constraint firstAttribute="trailing" secondItem="rIj-3S-eTg" secondAttribute="trailing" constant="22" id="3fL-Hm-bhf"/>
+                                    <constraint firstItem="nyi-uL-90Q" firstAttribute="leading" secondItem="KOa-77-nDZ" secondAttribute="leading" constant="22" id="GDi-i5-kh0"/>
+                                    <constraint firstAttribute="height" constant="100" id="LG5-aN-kff"/>
+                                    <constraint firstItem="nyi-uL-90Q" firstAttribute="top" secondItem="KOa-77-nDZ" secondAttribute="top" constant="22" id="egR-tF-W9F"/>
+                                    <constraint firstItem="rIj-3S-eTg" firstAttribute="top" secondItem="KOa-77-nDZ" secondAttribute="top" constant="22" id="fqQ-em-jI1"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="X">
-                                    <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
-                                    <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIj-3S-eTg">
-                                <rect key="frame" x="338" y="47" width="36" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="cIb-17-4df"/>
-                                    <constraint firstAttribute="height" constant="36" id="p19-HA-0TH"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="?">
-                                    <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
-                                    <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIB-zD-LbS">
+                                <rect key="frame" x="0.0" y="100" width="390" height="710"/>
+                                <connections>
+                                    <segue destination="yeq-8t-Evn" kind="embed" id="rR7-YK-kV6"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rIj-3S-eTg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NZQ-9G-nWp"/>
-                            <constraint firstItem="nyi-uL-90Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bNW-By-bXG"/>
-                            <constraint firstItem="nyi-uL-90Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pto-u6-YUC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rIj-3S-eTg" secondAttribute="trailing" constant="16" id="uQW-BP-9nh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tIB-zD-LbS" secondAttribute="trailing" id="DE3-cl-hZP"/>
+                            <constraint firstItem="KOa-77-nDZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GDl-IZ-8bV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tIB-zD-LbS" secondAttribute="bottom" id="Oux-Vj-msE"/>
+                            <constraint firstItem="KOa-77-nDZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VUk-Z3-gsy"/>
+                            <constraint firstItem="tIB-zD-LbS" firstAttribute="top" secondItem="KOa-77-nDZ" secondAttribute="bottom" id="gjz-Dp-zXY"/>
+                            <constraint firstAttribute="trailing" secondItem="KOa-77-nDZ" secondAttribute="trailing" id="krW-AE-imW"/>
+                            <constraint firstItem="tIB-zD-LbS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xOh-hc-ZOF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="closeBtn" destination="nyi-uL-90Q" id="lv3-ZW-bPH"/>
+                        <outlet property="containerView" destination="tIB-zD-LbS" id="Z0p-sH-K8z"/>
                         <outlet property="infoBtn" destination="rIj-3S-eTg" id="QxN-jE-CHE"/>
                     </connections>
                 </viewController>
@@ -58,5 +82,24 @@
             </objects>
             <point key="canvasLocation" x="112.30769230769231" y="-2.1327014218009479"/>
         </scene>
+        <!--Cred Stack Base View Controller-->
+        <scene sceneID="Qja-uu-H8g">
+            <objects>
+                <viewController id="yeq-8t-Evn" customClass="CredStackBaseViewController" customModule="CREDTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ewm-jM-6VH">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="710"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tF2-g8-M0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="-2"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

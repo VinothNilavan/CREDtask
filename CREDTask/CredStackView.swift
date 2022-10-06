@@ -68,7 +68,7 @@ class CredStackView: UIView {
     private func setup() {
         credFirstView.backgroundColor = .systemBlue
         addPinnedSubview(mainActionView, insets: UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0))
-        mainActionView.addPinnedSubview(stackView, insets: UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0))
+        mainActionView.addPinnedSubview(stackView, insets: UIEdgeInsets(top: 44, left: 0, bottom: 0, right: 0))
         stackView.addArrangedSubview(titleLbl)
         stackView.addArrangedSubview(subTitleLbl)
         stackView.addArrangedSubview(credFirstView)
@@ -84,8 +84,8 @@ class CredStackView: UIView {
             stackView.trailingAnchor.constraint(equalTo: mainActionView.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: mainActionView.bottomAnchor, constant: -16)
         ])
-        titleLbl.text = "sdfkns fsfsf sdaf,sfd "
-        subTitleLbl.text = "152312312321567 5625623162 3125635123 61522561 "
+        titleLbl.text = "One "
+        subTitleLbl.text = "152312312321567  "
     }
 }
 

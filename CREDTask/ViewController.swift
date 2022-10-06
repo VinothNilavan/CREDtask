@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var infoBtn: UIButton!
     @IBOutlet weak var closeBtn: UIButton!
+    
+    @IBOutlet weak var containerView: UIView!
     var creadView = CredStackView()
     
     override func viewDidLoad() {
@@ -19,6 +21,5 @@ class ViewController: UIViewController {
         closeBtn.roundCorners()
         infoBtn.backgroundColor = .darkGray.withAlphaComponent(0.5)
         closeBtn.backgroundColor = .darkGray.withAlphaComponent(0.5)
-        self.view = creadView
     }
 }
