@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Credit Card View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CreditCardViewController" customModule="TCTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXQ-7h-yFm">
+                                <rect key="frame" x="0.0" y="288" width="414" height="320"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wU-gV-1ri">
+                                        <rect key="frame" x="10" y="45" width="394" height="230"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_unknown" translatesAutoresizingMaskIntoConstraints="NO" id="lyV-xB-2se">
+                                                <rect key="frame" x="334" y="25" width="35" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="rxl-GF-oXn"/>
+                                                    <constraint firstAttribute="width" constant="35" id="vrr-vQ-Qjj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8T-md-eBG" userLabel="TxFieldView">
+                                                <rect key="frame" x="25" y="87.5" width="344" height="55"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="41W-hz-Cuc">
+                                                        <rect key="frame" x="5" y="2.5" width="300" height="50"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7R-tS-Qs1">
+                                                                <rect key="frame" x="0.0" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="A2s-V6-P1z"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eVx-bF-8qc"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QiR-hN-hoo">
+                                                                <rect key="frame" x="15" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="hAs-OC-47H"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pdQ-JP-gvV"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UUe-fk-wWk">
+                                                                <rect key="frame" x="30" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="4WK-GI-YbB"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Pi1-Hr-0W4"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SL7-YA-ahZ">
+                                                                <rect key="frame" x="45" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="YgT-Pz-23L"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dR7-DZ-lic"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WNU-pI-r6o">
+                                                                <rect key="frame" x="60" y="0.0" width="15" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="iJC-yd-u5N"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qNy-5s-di5">
+                                                                <rect key="frame" x="75" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="B1X-73-U68"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="C1V-JZ-6Oc"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRH-xl-30K">
+                                                                <rect key="frame" x="90" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="UoI-4k-GPe"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="khj-V3-2bq"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4a-AW-bSM">
+                                                                <rect key="frame" x="105" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="6u5-oL-DhY"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Y1g-4Q-Y5i"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vju-Jf-e1v">
+                                                                <rect key="frame" x="120" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="AiA-8G-Gjd"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pO9-5k-vHt"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eVP-z5-1nE">
+                                                                <rect key="frame" x="135" y="0.0" width="15" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="wzR-LY-OPR"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textField opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fss-b3-3gw">
+                                                                <rect key="frame" x="150" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="W1F-DD-CsZ"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KWT-DQ-pc7"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSW-pN-jgB">
+                                                                <rect key="frame" x="165" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="C0R-tq-X02"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vth-mC-0Fz"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yRK-3U-Mcl">
+                                                                <rect key="frame" x="180" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="AF6-EP-2wc"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ES5-0p-sqp"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kev-ME-Ghb">
+                                                                <rect key="frame" x="195" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="k60-97-hBc"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4tt-Pg-cI7"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qwL-y8-VwU">
+                                                                <rect key="frame" x="210" y="0.0" width="15" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="UGm-dj-ZSO"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textField opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38K-lv-hxK">
+                                                                <rect key="frame" x="225" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="sQz-aj-UA9"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LOH-1o-AyD"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWr-1U-C4b">
+                                                                <rect key="frame" x="240" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="SHB-ue-f3C"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Vur-rK-wIQ"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yqe-cQ-jik">
+                                                                <rect key="frame" x="255" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="vNv-yB-PXZ"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IZc-xf-PU5"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1W2-13-j5f">
+                                                                <rect key="frame" x="270" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="uEh-uX-YYw"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FX3-pb-ZM8"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="X" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N3C-EA-Pzs">
+                                                                <rect key="frame" x="285" y="13.5" width="15" height="23"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="Hhy-bL-tyB"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qtu-FI-HCe"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="76d-Fk-unA"/>
+                                                    <constraint firstItem="41W-hz-Cuc" firstAttribute="leading" secondItem="k8T-md-eBG" secondAttribute="leading" constant="5" id="DLT-kW-iRN"/>
+                                                    <constraint firstItem="41W-hz-Cuc" firstAttribute="centerY" secondItem="k8T-md-eBG" secondAttribute="centerY" id="ltL-wB-2xn"/>
+                                                </constraints>
+                                            </view>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Card info not found." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcF-3S-9G3">
+                                                <rect key="frame" x="25" y="191" width="309" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.12216645077720212" green="0.12216645077720212" blue="0.12216645077720212" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="k8T-md-eBG" secondAttribute="trailing" constant="25" id="J6k-16-Ucj"/>
+                                            <constraint firstAttribute="height" constant="230" id="b2X-a3-WEn"/>
+                                            <constraint firstAttribute="trailing" secondItem="lyV-xB-2se" secondAttribute="trailing" constant="25" id="c2Y-tz-XGo"/>
+                                            <constraint firstItem="k8T-md-eBG" firstAttribute="leading" secondItem="9wU-gV-1ri" secondAttribute="leading" constant="25" id="hYB-yl-KNz"/>
+                                            <constraint firstItem="lyV-xB-2se" firstAttribute="top" secondItem="9wU-gV-1ri" secondAttribute="top" constant="25" id="qgh-zv-53z"/>
+                                            <constraint firstItem="k8T-md-eBG" firstAttribute="centerY" secondItem="9wU-gV-1ri" secondAttribute="centerY" id="uHE-Wv-2Pz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="9cn-54-Til"/>
+                                    <constraint firstAttribute="trailing" secondItem="9wU-gV-1ri" secondAttribute="trailing" constant="10" id="UzJ-HB-LB8"/>
+                                    <constraint firstItem="9wU-gV-1ri" firstAttribute="leading" secondItem="SXQ-7h-yFm" secondAttribute="leading" constant="10" id="ck6-4i-YhM"/>
+                                    <constraint firstItem="9wU-gV-1ri" firstAttribute="centerY" secondItem="SXQ-7h-yFm" secondAttribute="centerY" id="llX-8U-WLe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SXQ-7h-yFm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OuA-SP-mIR"/>
+                            <constraint firstItem="SXQ-7h-yFm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u28-ag-pdf"/>
+                            <constraint firstItem="SXQ-7h-yFm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wBH-Ce-B4s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="baseHolderView" destination="SXQ-7h-yFm" id="obi-p0-V4s"/>
+                        <outlet property="cardHolderView" destination="9wU-gV-1ri" id="J2B-1g-bYF"/>
+                        <outlet property="cardNumbersStackView" destination="41W-hz-Cuc" id="Zw0-Oj-kpQ"/>
+                        <outlet property="cardTypeImageView" destination="lyV-xB-2se" id="14g-nt-Cek"/>
+                        <outlet property="dividerImageView1" destination="WNU-pI-r6o" id="ZZu-eq-MI2"/>
+                        <outlet property="dividerImageView2" destination="eVP-z5-1nE" id="LJS-gU-KMZ"/>
+                        <outlet property="dividerImageView3" destination="qwL-y8-VwU" id="O2f-W9-8jH"/>
+                        <outlet property="errorLbl" destination="pcF-3S-9G3" id="0hK-4F-6DQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card_unknown" width="32" height="20"/>
+    </resources>
+</document>
